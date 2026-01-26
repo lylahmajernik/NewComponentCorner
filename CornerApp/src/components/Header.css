@@ -1,0 +1,36 @@
+/* generative ai used */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #1f2933;
+  color: #ffffff;
+}
+
+.store-name {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 4px 6px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Optional: emphasize Products */
+.nav-link.products {
+  font-weight: 600;
+}
