@@ -1,25 +1,14 @@
-import './ProductCard.css'
-function ProductCard({ name, image, price, info }) {
+import './ProductCard.css';
+
+function ProductCard({ name, image, price, info, onAddToCart }) {
   return (
     <div className="product-card">
-      <div className="Product-header">
-        <img 
-          src={image}
-          alt="Product Image" 
-          className="image"
-        />
-        <div className="name">
-          <h3 className="name">{name}</h3>
-        </div>
-        <div className="price">
-          <h3 className="price">{price}</h3>
-        </div>
-        <div className="info">
-          <h3 className="info">{info}</h3>
-        </div>
-    </div>
+      <img src={image} alt={name} />
+      <h3>{name}</h3>
+      <p>{info}</p>
+      <p>${price}</p>
+      <button onClick={onAddToCart}>Add to Cart</button>
     </div>
   );
 }
-
 export default ProductCard;

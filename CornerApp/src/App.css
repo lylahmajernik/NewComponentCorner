@@ -60,3 +60,10 @@ main {
   font-weight: 600;
   color: #2e7d32;
 }
+.cart-list {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
